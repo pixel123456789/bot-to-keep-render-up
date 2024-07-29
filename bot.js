@@ -3,7 +3,7 @@ const axios = require('axios');
 
 // Array of URLs you want to keep alive
 const urls = [
-  'https://example.com', // Replace with the first URL
+  'https://my-flask-app-1pgq.onrender.com', // Replace with the first URL
   'https://another-example.com' // Replace with the second URL
 ];
 

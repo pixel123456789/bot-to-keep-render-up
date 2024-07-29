@@ -42,9 +42,3 @@ keepAlive();
 app.listen(port, () => {
   console.log(`Keep-alive bot listening at http://localhost:${port}`);
 });
-
-// Run the keepAlive function periodically (e.g., every 5 minutes)
-setInterval(keepAlive, 5 * 60 * 1000); // 5 minutes in milliseconds
-
-// Initial call to start the bot immediately
-keepAlive();

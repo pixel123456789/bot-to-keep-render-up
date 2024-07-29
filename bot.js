@@ -1,23 +1,3 @@
-// bot.js
-const axios = require('axios');
-
-// Array of URLs you want to keep alive
-const urls = [
-  'https://my-flask-app-1pgq.onrender.com', // Replace with the first URL
-  'https://bot-2-d2eh.onrender.com' // Replace with the second URL
-];
-
-// Function to ping all URLs
-async function keepAlive() {
-  for (const url of urls) {
-    try {
-      await axios.get(url);
-      console.log(`Successfully pinged ${url} at ${new Date().toISOString()}`);
-    } catch (error) {
-      console.error(`Error pinging ${url}:`, error);
-    }
-  }
-}
 const axios = require('axios');
 const express = require('express');
 const app = express();
